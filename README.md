@@ -69,13 +69,13 @@ The general solution for a weakly damped $`(\beta < \omega_0`$ system is:
 \theta(t) = \theta_0 e^{-\beta t} \cos(\omega_d t + \phi)
 ```
 
-where $`\(\omega_d = \sqrt{\omega_0^2 - \beta^2}\)`$ is the damped frequency.
+where $`\omega_d = \sqrt{\omega_0^2 - \beta^2}`$ is the damped frequency.
 
-The pendulum is considered to have "stopped" when its amplitude falls below a small threshold $`\(\theta_{min}\)`$, typically close to zero.
+The pendulum is considered to have "stopped" when its amplitude falls below a small threshold $`\theta_{min}`$, typically close to zero.
 
 ### Stopping Time Estimation
 
-Setting $`\(\theta(t_{stop}) = \theta_{min}\)`$, we solve:
+Setting $`\theta(t_{stop}) = \theta_{min}`$, we solve:
 
 ```math
 \theta_{min} = \theta_0 e^{-\beta t_{stop}}
