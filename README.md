@@ -51,8 +51,8 @@ A damped pendulum experiences resistive forces (e.g., air resistance or friction
 where:
 - $`\theta`$ is the angular displacement,
 - $`g`$ is the acceleration due to gravity,
-- $`\(L\)`$ is the length of the pendulum,
-- $`\(\beta = \frac{b}{2m}\)`$ is the damping coefficient, with $`\(b\)`$ being the damping force per unit velocity and $`\(m\)`$ the pendulum's mass.
+- $`L`$ is the length of the pendulum,
+- $`\beta = \frac{b}{2m}`$ is the damping coefficient, with $`\(b\)`$ being the damping force per unit velocity and $`\(m\)`$ the pendulum's mass.
 
 ### Approximation for Small Angles and Overdamped Regime
 
