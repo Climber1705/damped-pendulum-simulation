@@ -19,11 +19,11 @@ class Window:
         self.screen = pygame.display.set_mode(self.RES)
 
     """
-        Draw the pendulum on the window
-        @param position: the position of the pendulum
-        @param pivot: the pivot of the pendulum
+        Draw the pendulum on the window.
+        @param position: the position of the pendulum.
+        @param pivot: the pivot of the pendulum.
     """
-    def draw(self, position, pivot):
+    def draw(self, position, pivot) -> None:
         self.screen.fill(self.BLACK)
         pygame.draw.line(self.screen, self.WHITE, pivot, position, 2)
         pygame.draw.circle(self.screen, self.BLACK, pivot, 5)
