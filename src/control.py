@@ -9,13 +9,12 @@ from graph import Graph
 """
     Controller class is the main class that controls the flow of the program.
     It initializes the pendulum, graph and window objects and runs the main loop.
-    The main loop checks for events, updates the pendulum and graph objects and
+    The main loop checks for events updates the pendulum and graph objects and
     updates the display.
 """
 
 class Controller:
 
-    """ Constants """
     WIDTH, HEIGHT = 600, 700
     FPS = 60
     PIVOT = np.array([WIDTH//2, HEIGHT//6])
@@ -28,16 +27,16 @@ class Controller:
         self.clock = pygame.time.Clock()
     
     """
-        Get the current mouse position
-        @return: the current mouse position as a numpy array 
+        Get the current mouse position.
+        @return: the current mouse position as a numpy array.
     """
-    def get_mouse_pos(self):
+    def get_mouse_pos(self) -> np.array:
         return np.array(pygame.mouse.get_pos())
     
     """
-        Main loop of the program
+        The main loop of the program.
     """
-    def run(self):
+    def run(self) -> None:
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
