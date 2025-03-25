@@ -9,7 +9,7 @@ from graph import Graph
 """
     Controller class is the main class that controls the flow of the program.
     It initializes the pendulum, graph and window objects and runs the main loop.
-    The main loop checks for events, updates the pendulum and graph objects and
+    The main loop checks for events updates the pendulum and graph objects and
     updates the display.
 """
 
@@ -34,7 +34,7 @@ class Controller:
         return np.array(pygame.mouse.get_pos())
     
     """
-        Main loop of the program.
+        The main loop of the program.
     """
     def run(self) -> None:
         while True:
