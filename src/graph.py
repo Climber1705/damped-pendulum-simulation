@@ -12,7 +12,7 @@ import numpy as np
 class Graph:
 
     def __init__(self, pendulum):
-        # Initialize figures and subplots.
+        # Initialize figure and subplots.
         self.fig, (self.ax1, self.ax2) = plt.subplots(2, 1, figsize=(8, 6))
 
         self.fig.subplots_adjust(hspace=0.4)
@@ -70,7 +70,7 @@ class Graph:
         self.line1.set_data([], [])
         self.line2.set_data([], [])
 
-        # Reset the x-axis range.
+        # Reset x-axis range.
         self.ax1.set_xlim(0, 1)
         self.ax2.set_xlim(0, 1)
 
@@ -99,7 +99,7 @@ class Graph:
         self.line1.set_data(self.time, self.displacement)
         self.line2.set_data(self.time, self.linear_velocity)
 
-        # Adjust the x-axis dynamically.
+        # Adjust x-axis dynamically.
         self.ax1.set_xlim(0, max(self.time) + 1)
         self.ax2.set_xlim(0, max(self.time) + 1)
 
