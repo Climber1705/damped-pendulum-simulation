@@ -52,11 +52,11 @@ where:
 - $`\theta`$ is the angular displacement,
 - $`g`$ is the acceleration due to gravity,
 - $`L`$ is the length of the pendulum,
-- $`\beta = \frac{b}{2m}`$ is the damping coefficient, with $`\(b\)`$ being the damping force per unit velocity and $`\(m\)`$ the pendulum's mass.
+- $`\beta = \frac{b}{2m}`$ is the damping coefficient, with $`b`$ being the damping force per unit velocity and $`m`$ the pendulum's mass.
 
 ### Approximation for Small Angles and Overdamped Regime
 
-For small angles $`(\(\sin\theta \approx \theta\))`$, the equation simplifies to:
+For small angles $`(\sin\theta \approx \theta\)`$, the equation simplifies to:
 
 ```
 \frac{d^2\theta}{dt^2} + 2\beta \frac{d\theta}{dt} + \omega_0^2 \theta = 0
