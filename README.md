@@ -25,8 +25,22 @@ To run the simulation:
 python src/control.py
 ```
 This command initialises the simulation with default parameters. To customise the parameters, modify the src/control.py file before execution.
-Repository Structure
 
+## Repository Structure
+```graphql
+damped-pendulum-simulation/
+│
+├── src/
+│   ├── control.py        # Entry point to run the simulation
+│   ├── graph.py          # Handles plotting of pendulum motion and energy graphs
+│   ├── pendulum.py       # Defines the pendulum class and equations of motion
+│   └── view.py           # Handles visualization and animation of the pendulum
+│
+├── requirements.txt      # List of Python dependencies
+├── README.md             # Project documentation
+└── LICENSE               # Project license (GNU)
+
+```
 
 ## Improvements
 Future enhancements could include:
@@ -34,9 +48,9 @@ Future enhancements could include:
 - Adding a graphical user interface (GUI) for interactive parameter adjustments.
 - Extending the simulation to model-driven pendulums or coupled pendulum systems.
 
-## Resources
+## Help and Resources
 For further reading on damped pendulum dynamics and simulations:
 - [Pendulum (mechanics) – Wikipedia](https://en.wikipedia.org/wiki/Pendulum_(mechanics))
 
 ## License
-This project is licensed under the GNU General Public License v3.0. The [LICENSE]() file provides more details.
+This project operates under the GNU General Public License v3.0. The [LICENSE](https://choosealicense.com/licenses/gpl-3.0/) file provides details.
