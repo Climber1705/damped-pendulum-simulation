@@ -2,7 +2,7 @@
 import numpy as np
 
 """
-    Pendulum class is the class that models the pendulum.
+    The pendulum class is the class that models the pendulum.
     It calculates the position of the pendulum at each time step.
     It also calculates the angle of the pendulum at each time step.
     It also calculates the time period of the pendulum.
@@ -22,9 +22,9 @@ class Pendulum:
         self.clear()
 
     """
-        Clear the pendulum's attributes
+        Clear the pendulum's attributes.
     """
-    def clear(self):
+    def clear(self) -> None:
         self.time = 0
         self.w = 0
         self.orientation = None
@@ -32,16 +32,16 @@ class Pendulum:
         self.position = None
     
     """
-        Check if the pendulum is ready to be used
-        @return: True if the pendulum is ready, False otherwise
+        Check if the pendulum is ready to be used.
+        @return: True if the pendulum is ready, False otherwise.
     """
-    def is_ready(self):
+    def is_ready(self) -> bool:
         return self.orientation is not None
 
     """
-        Set the position of the pendulum
+        Set the position of the pendulum.
     """
-    def set_position(self):
+    def set_position(self) -> None:
         self.position = self.control.get_mouse_pos()
         self.orientation = np.matmul(self.control.TRANSFORM_FRAME, self.position - self.PIVOT)
         self.length = np.linalg.norm(self.orientation)
@@ -51,9 +51,9 @@ class Pendulum:
         self.time_period = 2 * np.pi * np.sqrt(self.length / self.g) * np.sqrt(1 - (self.RESISTANCE**2 / (4 * self.MASS * self.g)))
             
     """
-        Update the pendulum's position and angle
+        Update the pendulum's position and angle.
     """
-    def update(self):
+    def update(self) -> None:
         if not self.is_ready():
             return
         self.time += self.dt
@@ -62,5 +62,3 @@ class Pendulum:
         self.angle += self.w
         self.orientation = np.array([self.length * np.sin(self.angle), self.length * -np.cos(self.angle)])
         self.position = np.matmul(self.control.TRANSFORM_FRAME, self.orientation) + self.PIVOT
-        
-        
