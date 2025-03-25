@@ -11,7 +11,7 @@ import numpy as np
 class Pendulum:
 
     g = 9.80665
-    RESISTANCE = 0.15
+    DAMPING_FACTOR = 0.15
     RADIUS = 20
     MASS = 1
 
@@ -57,7 +57,7 @@ class Pendulum:
         if not self.is_ready():
             return
         self.time += self.dt
-        deltaw = -self.g/self.length * np.sin(self.angle) - (self.RESISTANCE * self.w)
+        deltaw = -self.g/self.length * np.sin(self.angle) - (self.DAMPING_FACTOR * self.w)
         self.w += deltaw * self.dt
         self.angle += self.w
         self.orientation = np.array([self.length * np.sin(self.angle), self.length * -np.cos(self.angle)])
