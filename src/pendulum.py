@@ -2,7 +2,7 @@
 import numpy as np
 
 """
-    The pendulum class is the class that models the pendulum.
+    Pendulum class is the class that models the pendulum.
     It calculates the position of the pendulum at each time step.
     It also calculates the angle of the pendulum at each time step.
     It also calculates the time period of the pendulum.
@@ -48,7 +48,7 @@ class Pendulum:
         self.angle = np.arccos(np.dot(self.orientation, np.array([0, -1])) / self.length)
         if self.orientation[0] < 0:
             self.angle = -self.angle
-        self.time_period = 2 * np.pi * np.sqrt(self.length / self.g) * np.sqrt(1 - (self.RESISTANCE**2 / (4 * self.MASS * self.g)))
+        self.time_period = 2 * np.pi * np.sqrt(self.length / self.g) * np.sqrt(1 - (self.DAMPING_FACTOR**2 / (4 * self.MASS * self.g)))
             
     """
         Update the pendulum's position and angle.
