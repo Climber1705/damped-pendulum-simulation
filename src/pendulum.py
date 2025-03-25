@@ -2,7 +2,7 @@
 import numpy as np
 
 """
-    Pendulum class is the class that models the pendulum.
+    The pendulum class is the class that models the pendulum.
     It calculates the position of the pendulum at each time step.
     It also calculates the angle of the pendulum at each time step.
     It also calculates the time period of the pendulum.
@@ -11,9 +11,10 @@ import numpy as np
 class Pendulum:
 
     g = 9.80665
-    DAMPING_FACTOR = 0.15
+    DAMPING_COEFFICIENT = 0.15
     RADIUS = 20
     MASS = 1
+    STOPPING_TOLERANCE = 0.01
 
     def __init__(self, control, FPS, pivot):
         self.control = control
@@ -48,7 +49,8 @@ class Pendulum:
         self.angle = np.arccos(np.dot(self.orientation, np.array([0, -1])) / self.length)
         if self.orientation[0] < 0:
             self.angle = -self.angle
-        self.time_period = 2 * np.pi * np.sqrt(self.length / self.g) * np.sqrt(1 - (self.DAMPING_FACTOR**2 / (4 * self.MASS * self.g)))
+        self.time_period = (1/self.DAMPING_COEFFICIENT) * np.log(self.angle / self.STOPPING_TOLERANCE)
+        print(self.time_period)
             
     """
         Update the pendulum's position and angle.
@@ -57,7 +59,7 @@ class Pendulum:
         if not self.is_ready():
             return
         self.time += self.dt
-        deltaw = -self.g/self.length * np.sin(self.angle) - (self.DAMPING_FACTOR * self.w)
+        deltaw = -self.g/self.length * np.sin(self.angle) - (self.DAMPING_COEFFICIENT * self.w)
         self.w += deltaw * self.dt
         self.angle += self.w
         self.orientation = np.array([self.length * np.sin(self.angle), self.length * -np.cos(self.angle)])
