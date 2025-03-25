@@ -13,7 +13,6 @@ class Pendulum:
     g = 9.80665
     DAMPING_COEFFICIENT = 0.15
     RADIUS = 20
-    MASS = 1
     STOPPING_TOLERANCE = 0.01
 
     def __init__(self, control, FPS, pivot):
