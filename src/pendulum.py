@@ -58,7 +58,7 @@ class Pendulum:
         if not self.is_ready():
             return
         self.time += self.dt
-        deltaw = -self.g/self.length * np.sin(self.angle) - (self.DAMPING_COEFFICIENT * self.w)
+        deltaw = -self.g/self.length * np.sin(self.angle) - (2 * self.DAMPING_COEFFICIENT * self.w)
         self.w += deltaw * self.dt
         self.angle += self.w
         self.orientation = np.array([self.length * np.sin(self.angle), self.length * -np.cos(self.angle)])
