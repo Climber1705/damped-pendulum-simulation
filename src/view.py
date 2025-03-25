@@ -2,9 +2,9 @@
 import pygame
 
 """
-    Window class is responsible for creating the window and drawing the pendulum.
-    It has a method to draw the pendulum.
-    The draw method draws the pendulum on the window.
+    The window class is responsible for creating the window and drawing the pendulum.
+    It has a method for drawing the pendulum.
+    The drawing method involves drawing the pendulum on the window.
 """
 class Window:
 
