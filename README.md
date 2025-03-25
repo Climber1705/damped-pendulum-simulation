@@ -51,6 +51,8 @@ Future enhancements could include:
 ## Help and Resources
 For further reading on damped pendulum dynamics and simulations:
 - [Pendulum (mechanics) – Wikipedia](https://en.wikipedia.org/wiki/Pendulum_(mechanics))
+- [Stopping time of a damped pendulum - Physics Stack Exchange](https://physics.stackexchange.com/questions/621912/stopping-time-of-a-damped-pendulum)
+- [Damped Oscillations - Physics LibreTexts](https://phys.libretexts.org/Bookshelves/University_Physics/University_Physics_%28OpenStax%29/Book%3A_University_Physics_I_-_Mechanics_Sound_Oscillations_and_Waves_%28OpenStax%29/15%3A_Oscillations/15.06%3A_Damped_Oscillations)
 
 ## License
 This project operates under the GNU General Public License v3.0. The [LICENSE](https://choosealicense.com/licenses/gpl-3.0/) file provides details.
