@@ -44,16 +44,15 @@ damped-pendulum-simulation/
 ## Derivation: Stopping Time of a Damped Pendulum
 
 A damped pendulum experiences resistive forces (e.g., air resistance or friction at the pivot), causing its oscillations to decay over time. The equation of motion for a simple damped pendulum is:
-
-\[
+$$\[
 \frac{d^2\theta}{dt^2} + 2\beta \frac{d\theta}{dt} + \frac{g}{L} \sin\theta = 0
-\]
+\]$$
 
 where:
-- \(\theta\) is the angular displacement,
-- \(g\) is the acceleration due to gravity,
-- \(L\) is the length of the pendulum,
-- \(\beta = \frac{b}{2m}\) is the damping coefficient, with \(b\) being the damping force per unit velocity and \(m\) the pendulum's mass.
+- $$\(\theta\)$$ is the angular displacement,
+- $$\(g\)$$ is the acceleration due to gravity,
+- $$\(L\)$$ is the length of the pendulum,
+- $$\(\beta = \frac{b}{2m}\)$$ is the damping coefficient, with \(b\) being the damping force per unit velocity and \(m\) the pendulum's mass.
 
 ### Approximation for Small Angles and Overdamped Regime
 
