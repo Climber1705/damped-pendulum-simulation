@@ -56,14 +56,14 @@ where:
 
 ### Approximation for Small Angles and Overdamped Regime
 
-For small angles $`(\sin\theta \approx \theta\)`$, the equation simplifies to:
+For small angles $`\sin\theta \approx \theta`$, the equation simplifies to:
 
-```
+```math
 \frac{d^2\theta}{dt^2} + 2\beta \frac{d\theta}{dt} + \omega_0^2 \theta = 0
 ```
-where $`\(\omega_0 = \sqrt{g/L}\)`$ is the natural frequency.
+where $`\omega_0 = \sqrt{g/L}`$ is the natural frequency.
 
-The general solution for a weakly damped $`(\(\beta < \omega_0\))`$ system is:
+The general solution for a weakly damped $`(\beta < \omega_0`$ system is:
 
 ```math
 \theta(t) = \theta_0 e^{-\beta t} \cos(\omega_d t + \phi)
