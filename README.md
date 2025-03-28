@@ -3,9 +3,9 @@
 This repository offers a simulation of a damped pendulum, modelling its motion under the influence of gravity and damping forces. The simulation numerically solves the governing differential equations and visualises the pendulum's behaviour over time.
 
 ## Features
-- **Numerical Solver:** Implements numerical methods to solve the equations of motion for the damped pendulum.
-- **Visualisation:** This animation of the pendulum's motion plots key parameters such as displacement and linear velocity over time.
- - **Parameter Customization:** Users can adjust physical parameters like pendulum length, damping coefficient, and initial conditions.
+- 🔢 **Numerical Solver:** Implements numerical methods to solve the equations of motion for the damped pendulum.
+- 📊 **Visualisation:** This animation of the pendulum's motion plots key parameters such as displacement and linear velocity over time.
+- ⚙️ **Parameter Customization:** Users can adjust physical parameters like pendulum length, damping coefficient, and initial conditions.
 
 ## Installation
 1. **Clone the Repository:**
