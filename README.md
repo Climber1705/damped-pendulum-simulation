@@ -63,7 +63,7 @@ For small angles **$`\sin\theta \approx \theta`$**, the equation simplifies to:
 ```
 where **$`\omega_0 = \sqrt{g/L}`$** is the natural frequency.
 
-The general solution for a weakly damped **$`(\beta < \omega_0`$** system is:
+The general solution for a weakly damped **$`(\beta < \omega_0)`$** system is:
 
 ```math
 \theta(t) = \theta_0 e^{-\beta t} \cos(\omega_d t + \phi)
