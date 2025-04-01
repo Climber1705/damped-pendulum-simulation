@@ -1,11 +1,11 @@
 # 🎯 **Damped Pendulum Simulation**
 ## 🔍 **Overview**
-This repository offers a simulation of a **damped pendulum**, modelling its motion under the influence of gravity and damping forces. The simulation numerically solves the governing differential equations and visualises the pendulum's behaviour over time.
+This repository simulates a **damped pendulum**, modelling its motion under gravity and damping forces. The simulation numerically solves the governing differential equations and visualises the pendulum's behaviour over time.
 
 ## 🎨 **Features**
 - 🔢 **Numerical Solver:** Implements numerical methods to solve the equations of motion for the damped pendulum.
 - 📊 **Visualisation:** This animation of the pendulum's motion plots key parameters such as displacement and linear velocity over time.
-- ⚙️ **Parameter Customization:** Users can adjust physical parameters like pendulum length, damping coefficient, and initial conditions.
+- ⚙️ **Parameter Customisation:** Users can adjust physical parameters like pendulum length, damping coefficient, and initial conditions.
 
 ## 🛠️ **Installation**
 1. 📥 **Clone the Repository:**
@@ -34,7 +34,7 @@ damped-pendulum-simulation/
 │   ├── control.py        # Entry point to run the simulation
 │   ├── graph.py          # Handles plotting of pendulum motion and energy graphs
 │   ├── pendulum.py       # Defines the pendulum class and equations of motion
-│   └── view.py           # Handles visualization and animation of the pendulum
+│   └── view.py           # Handles visualisation and animation of the pendulum
 │
 ├── requirements.txt      # List of Python dependencies
 ├── README.md             # Project documentation
@@ -71,7 +71,7 @@ The general solution for a weakly damped **$`(\beta < \omega_0`$** system is:
 
 where **$`\omega_d = \sqrt{\omega_0^2 - \beta^2}`$** is the damped frequency.
 
-The pendulum is considered to have "stopped" when its amplitude falls below a small threshold **$`\theta_{min}`$**, typically close to zero.
+The pendulum has "stopped" when its amplitude falls below a small threshold **$`\theta_{min}`$**, typically close to zero.
 
 ### **Stopping Time Estimation**
 
@@ -86,7 +86,7 @@ Taking the natural logarithm:
 t_{stop} = \frac{1}{\beta} \ln\left(\frac{\theta_0}{\theta_{min}}\right)
 ```
 
-This formula estimates the time required for the pendulum to effectively come to rest under damping.
+This formula estimates the time required for the pendulum to rest under damping effectively.
 
 ## 🎯 **Improvements**
 Future enhancements could include:
@@ -102,3 +102,5 @@ For further reading on damped pendulum dynamics and simulations:
 
 ## 🔏 **License**
 This project operates under the **GNU General Public License v3.0**. The **[LICENSE](https://choosealicense.com/licenses/gpl-3.0/)** file provides details.
+
+
